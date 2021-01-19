@@ -3,16 +3,3 @@ title: "Brian Ward Photography"
 date: 2019-02-11T18:25:55-08:00
 ---
 
-{{ define "main" }}
-<div class="row" style="margin-top: 5%">
-    <h1>Square view<tiny><code>?nf_resize=smartcrop&w=300&h=300</code></tiny></h1>
-    <div class="masonry">
-        {{ range $.Site.Data.photos }}
-            <div class="item">
-                <img src="{{ .src }}?nf_resize=smartcrop&w=300&h=300">
-                <div class="top-left">{{ .name }}</div>
-            </div>
-        {{ end }}
-    </div>
-</div>
-{{ end }}
